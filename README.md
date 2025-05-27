@@ -123,7 +123,7 @@ Tabel statistik deskriptif memberikan gambaran mengenai distribusi fitur numerik
 - Tidak ada nilai kosong atau aneh yang tampak.
 
 ### Menghitung korelasi dan Visualisasi dengan heatmap
-![heatmap](heatmap.png)
+![heatmap](image/heatmap.png)
 - Size dan Sweetness: -0.32. Ini menunjukkan korelasi negatif yang moderat. Artinya, ada kecenderungan bahwa semakin besar ukurannya (Size), semakin rendah tingkat kemanisannya (Sweetness), dan sebaliknya.
 - Size dan Crunchiness: 0.17. Ini menunjukkan korelasi positif yang lemah. Ada sedikit kecenderungan bahwa semakin besar ukurannya, semakin tinggi tingkat kerenyahannya (Crunchiness).
 - Sweetness dan Ripeness: -0.27. Ini menunjukkan korelasi negatif yang moderat. Semakin tinggi tingkat kemanisan, cenderung semakin rendah tingkat kematangan (Ripeness), atau sebaliknya (berdasarkan data ini).
@@ -131,7 +131,7 @@ Tabel statistik deskriptif memberikan gambaran mengenai distribusi fitur numerik
 - Crunchiness dan Juiciness: -0.26. Korelasi negatif moderat. Semakin renyah (Crunchiness), cenderung semakin rendah kadar airnya (Juiciness).
 
 ### Plot histogram untuk masing-masing fitur
-![histogram](histogram.png)
+![histogram](image/histogram.png)
 - Semua enam fitur ('Size', 'Weight', 'Sweetness', 'Crunchiness', 'Juiciness', 'Ripeness') menunjukkan distribusi yang tampak mirip kurva normal atau berbentuk lonceng (bell-shaped). Ini berarti sebagian besar nilai terkonsentrasi di sekitar nilai tengah, dan frekuensinya menurun secara simetris ke kedua sisi.
 
 ## Data Preparation
@@ -343,16 +343,16 @@ Parameter Tuning yang Mempengaruhi:
 ### Metrik Evaluasi yang Digunakan:
 
 1. Accuracy
-  ![acc](acc.png)
+  ![acc](image/acc.png)
   Mengukur proporsi prediksi yang benar terhadap seluruh data. Cocok sebagai metrik umum ketika distribusi kelas tidak terlalu timpang.
 2. Precision
-  ![prc](prc.png)
+  ![prc](image/prc.png)
   Mengukur seberapa akurat prediksi positif yang dibuat oleh model. Cocok saat false positive memiliki dampak besar, misalnya ketika mengklasifikasikan apel jelek sebagai "good".
 3. Recall
-  ![rcl](rcl.png)
+  ![rcl](image/rcl.png)
   Mengukur seberapa banyak data positif yang berhasil ditangkap oleh model. Cocok saat false negative harus diminimalkan, misalnya agar tidak melewatkan apel bagus yang seharusnya disortir.
 4. F1 Score
-  ![f1](f1.png)
+  ![f1](image/f1.png)
   Merupakan rata-rata harmonik dari precision dan recall, digunakan untuk menyeimbangkan keduanya. Cocok ketika kita membutuhkan trade-off antara precision dan recall.
 
 ### Hasil Evaluasi
